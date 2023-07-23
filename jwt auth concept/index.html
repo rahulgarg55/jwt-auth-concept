@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JWT Authentication</title>
+</head>
+<body>
+  <h1>JWT Authentication Concept</h1>
+
+  <!-- Signup Form -->
+  <h2>Signup</h2>
+  <form id="signupForm">
+    <input type="text" id="signupUsername" placeholder="Username" required>
+    <input type="password" id="signupPassword" placeholder="Password" required>
+    <button type="submit">Signup</button>
+  </form>
+
+  <!-- Login Form -->
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Protected Area -->
+  <div id="protectedArea" style="display: none;">
+    <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+    <button id="logoutButton">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
